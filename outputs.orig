@@ -1,0 +1,29 @@
+/*
+output "avx_controller_public_ip" {
+  value = module.aviatrix_controller_build.aviatrix_controller_public_ip_address
+}
+
+output "avx_controller_private_ip" {
+  value = module.aviatrix_controller_build.aviatrix_controller_private_ip_address
+}
+
+output "avx_copilot_public_ip" {
+  value = module.copilot_build_azure.public_ip
+}
+*/
+
+output "application_id" {
+  value = azuread_application.aviatrix_ad_app.application_id
+}
+
+output "application_key" {
+  value = azuread_application_password.aviatrix_app_password.value
+}
+
+output "subscription_id" {
+  value = data.azurerm_subscription.main.subscription_id
+}
+
+output "directory_id" {
+  value = data.azurerm_subscription.main.tenant_id
+}
