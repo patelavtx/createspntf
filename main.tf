@@ -1,4 +1,4 @@
-
+## only running spn creation ##
 
 module "aviatrix_controller_azure" {
   source             = "./modules/aviatrix_controller_azure"
